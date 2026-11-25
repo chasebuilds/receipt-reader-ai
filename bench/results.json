@@ -1,0 +1,115 @@
+{
+ "ocr": "tesseract.js 5 (eng)",
+ "model": "Xenova/mobilebert-uncased-mnli",
+ "dev": {
+  "receipts": 72,
+  "vendor": {
+   "pct": 100,
+   "hit": 72,
+   "n": 72
+  },
+  "date": {
+   "pct": 100,
+   "hit": 72,
+   "n": 72
+  },
+  "total": {
+   "pct": 100,
+   "hit": 72,
+   "n": 72
+  },
+  "tax": {
+   "pct": 100,
+   "hit": 72,
+   "n": 72
+  },
+  "category": {
+   "pct": 100,
+   "hit": 72,
+   "n": 72
+  },
+  "categoryRulesOnly": {
+   "pct": 100,
+   "hit": 72,
+   "n": 72
+  },
+  "categoryModelOnly": {
+   "pct": 98.6,
+   "hit": 71,
+   "n": 72
+  },
+  "totalWithinOneCent": {
+   "pct": 100,
+   "hit": 72,
+   "n": 72
+  },
+  "allFiveCorrect": {
+   "pct": 100,
+   "hit": 72,
+   "n": 72
+  },
+  "misses": []
+ },
+ "holdout": {
+  "receipts": 60,
+  "vendor": {
+   "pct": 100,
+   "hit": 60,
+   "n": 60
+  },
+  "date": {
+   "pct": 98.3,
+   "hit": 59,
+   "n": 60
+  },
+  "total": {
+   "pct": 100,
+   "hit": 60,
+   "n": 60
+  },
+  "tax": {
+   "pct": 98.3,
+   "hit": 59,
+   "n": 60
+  },
+  "category": {
+   "pct": 100,
+   "hit": 60,
+   "n": 60
+  },
+  "categoryRulesOnly": {
+   "pct": 100,
+   "hit": 60,
+   "n": 60
+  },
+  "categoryModelOnly": {
+   "pct": 85,
+   "hit": 51,
+   "n": 60
+  },
+  "totalWithinOneCent": {
+   "pct": 100,
+   "hit": 60,
+   "n": 60
+  },
+  "allFiveCorrect": {
+   "pct": 96.7,
+   "hit": 58,
+   "n": 60
+  },
+  "misses": [
+   {
+    "file": "r048.jpg",
+    "field": "tax",
+    "want": 3.17,
+    "got": 3.11
+   },
+   {
+    "file": "r059.jpg",
+    "field": "date",
+    "want": "2026-11-12",
+    "got": null
+   }
+  ]
+ }
+}

@@ -1,0 +1,58 @@
+[
+ {
+  "file": "r001.jpg",
+  "vendor": "Bluefin Noodle Bar",
+  "date": "2026-04-09",
+  "total": 46.41,
+  "tax": 2.63,
+  "category": "Meals"
+ },
+ {
+  "file": "r002.jpg",
+  "vendor": "Northgrid Power Co",
+  "date": "2025-07-02",
+  "total": 216.1,
+  "tax": 0.0,
+  "category": "Utilities"
+ },
+ {
+  "file": "r003.jpg",
+  "vendor": "Pinecrest Petroleum",
+  "date": "2026-09-20",
+  "total": 524.82,
+  "tax": 47.71,
+  "category": "Fuel"
+ },
+ {
+  "file": "r006.jpg",
+  "vendor": "Skybridge Parking",
+  "date": "2026-02-09",
+  "total": 329.11,
+  "tax": 29.92,
+  "category": "Travel"
+ },
+ {
+  "file": "r010.jpg",
+  "vendor": "Paperwise Supply Co",
+  "date": "2026-04-18",
+  "total": 246.71,
+  "tax": 11.75,
+  "category": "Office Supplies"
+ },
+ {
+  "file": "r014.jpg",
+  "vendor": "Harborview Inn",
+  "date": "2026-06-11",
+  "total": 478.89,
+  "tax": 22.8,
+  "category": "Lodging"
+ },
+ {
+  "file": "ai-category.jpg",
+  "vendor": "Juniper Tavern",
+  "date": "2026-10-30",
+  "total": 32.61,
+  "tax": 2.13,
+  "category": "Meals"
+ }
+]

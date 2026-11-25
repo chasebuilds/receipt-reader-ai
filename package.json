@@ -1,0 +1,26 @@
+{
+  "name": "receipt-reader-ai",
+  "version": "0.1.0",
+  "description": "In-browser receipt OCR and field extraction to CSV/Excel",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "bench": "node bench/run.mjs",
+    "e2e": "playwright test",
+    "serve": "node e2e/serve.mjs"
+  },
+  "author": "Chase Builds",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@huggingface/transformers": "^3.8.1",
+    "tesseract.js": "^5.1.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1"
+  },
+  "private": true
+}

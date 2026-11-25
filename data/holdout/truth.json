@@ -1,0 +1,842 @@
+[
+ {
+  "file": "r001.jpg",
+  "vendor": "Bluefin Noodle Bar",
+  "date": "2026-09-22",
+  "total": 42.34,
+  "tax": 0.0,
+  "category": "Meals",
+  "meta": {
+   "font": "DejaVuSans.ttf",
+   "angle": 0.24,
+   "date_text": "9/22/26",
+   "tax_label": "Tax"
+  }
+ },
+ {
+  "file": "r002.jpg",
+  "vendor": "Metro Line Rideshare",
+  "date": "2025-07-07",
+  "total": 140.25,
+  "tax": 7.94,
+  "category": "Travel",
+  "meta": {
+   "font": "cour.ttf",
+   "angle": -0.82,
+   "date_text": "07/07/2025",
+   "tax_label": "TAX"
+  }
+ },
+ {
+  "file": "r003.jpg",
+  "vendor": "Paperwise Supply Co",
+  "date": "2025-01-04",
+  "total": 15.34,
+  "tax": 0.73,
+  "category": "Office Supplies",
+  "meta": {
+   "font": "tahoma.ttf",
+   "angle": 2.4,
+   "date_text": "Jan 04, 2025",
+   "tax_label": "TAX"
+  }
+ },
+ {
+  "file": "r004.jpg",
+  "vendor": "Deskworks Outlet",
+  "date": "2025-09-10",
+  "total": 56.64,
+  "tax": 2.7,
+  "category": "Office Supplies",
+  "meta": {
+   "font": "cour.ttf",
+   "angle": -2.35,
+   "date_text": "10-Sep-2025",
+   "tax_label": "TAX"
+  }
+ },
+ {
+  "file": "r005.jpg",
+  "vendor": "Bluefin Noodle Bar",
+  "date": "2026-01-17",
+  "total": 45.04,
+  "tax": 3.43,
+  "category": "Meals",
+  "meta": {
+   "font": "lucon.ttf",
+   "angle": -0.25,
+   "date_text": "2026-01-17",
+   "tax_label": "Tax 7%"
+  }
+ },
+ {
+  "file": "r006.jpg",
+  "vendor": "Lakeside Suites",
+  "date": "2026-03-21",
+  "total": 481.09,
+  "tax": 43.74,
+  "category": "Lodging",
+  "meta": {
+   "font": "consola.ttf",
+   "angle": 1.63,
+   "date_text": "21-Mar-2026",
+   "tax_label": "Tax"
+  }
+ },
+ {
+  "file": "r007.jpg",
+  "vendor": "Railway Express Tickets",
+  "date": "2025-11-17",
+  "total": 518.38,
+  "tax": 33.91,
+  "category": "Travel",
+  "meta": {
+   "font": "cour.ttf",
+   "angle": 0.67,
+   "date_text": "2025-11-17",
+   "tax_label": "Tax 7%"
+  }
+ },
+ {
+  "file": "r008.jpg",
+  "vendor": "Inkline Office Depot",
+  "date": "2026-11-28",
+  "total": 21.2,
+  "tax": 0.0,
+  "category": "Office Supplies",
+  "meta": {
+   "font": "LiberationSans-Regular.ttf",
+   "angle": 0.94,
+   "date_text": "2026-11-28",
+   "tax_label": "Tax"
+  }
+ },
+ {
+  "file": "r009.jpg",
+  "vendor": "Skybridge Parking",
+  "date": "2025-04-24",
+  "total": 198.17,
+  "tax": 12.96,
+  "category": "Travel",
+  "meta": {
+   "font": "DejaVuSans.ttf",
+   "angle": -1.36,
+   "date_text": "04/24/2025",
+   "tax_label": "VAT"
+  }
+ },
+ {
+  "file": "r010.jpg",
+  "vendor": "Maple Lantern Diner",
+  "date": "2026-08-23",
+  "total": 47.54,
+  "tax": 4.32,
+  "category": "Meals",
+  "meta": {
+   "font": "DejaVuSans.ttf",
+   "angle": -0.56,
+   "date_text": "23-Aug-2026",
+   "tax_label": "Tax 7%"
+  }
+ },
+ {
+  "file": "r011.jpg",
+  "vendor": "Quickfill Fuel Stop",
+  "date": "2026-02-22",
+  "total": 80.93,
+  "tax": 3.85,
+  "category": "Fuel",
+  "meta": {
+   "font": "DejaVuSansMono.ttf",
+   "angle": -1.41,
+   "date_text": "2/22/26",
+   "tax_label": "TAX"
+  }
+ },
+ {
+  "file": "r012.jpg",
+  "vendor": "Copper Kettle Cafe",
+  "date": "2025-08-17",
+  "total": 15.87,
+  "tax": 0.0,
+  "category": "Meals",
+  "meta": {
+   "font": "verdana.ttf",
+   "angle": -1.7,
+   "date_text": "17-Aug-2025",
+   "tax_label": "VAT"
+  }
+ },
+ {
+  "file": "r013.jpg",
+  "vendor": "Harborview Inn",
+  "date": "2026-05-20",
+  "total": 314.82,
+  "tax": 20.6,
+  "category": "Lodging",
+  "meta": {
+   "font": "arial.ttf",
+   "angle": -2.04,
+   "date_text": "May 20, 2026",
+   "tax_label": "TAX"
+  }
+ },
+ {
+  "file": "r014.jpg",
+  "vendor": "Bluefin Noodle Bar",
+  "date": "2025-04-14",
+  "total": 29.79,
+  "tax": 0.0,
+  "category": "Meals",
+  "meta": {
+   "font": "tahoma.ttf",
+   "angle": -1.27,
+   "date_text": "14-Apr-2025",
+   "tax_label": "GST"
+  }
+ },
+ {
+  "file": "r015.jpg",
+  "vendor": "Skybridge Parking",
+  "date": "2026-06-08",
+  "total": 82.95,
+  "tax": 6.32,
+  "category": "Travel",
+  "meta": {
+   "font": "cour.ttf",
+   "angle": 1.38,
+   "date_text": "08-Jun-2026",
+   "tax_label": "TAX"
+  }
+ },
+ {
+  "file": "r016.jpg",
+  "vendor": "Harborview Inn",
+  "date": "2025-10-05",
+  "total": 108.99,
+  "tax": 8.31,
+  "category": "Lodging",
+  "meta": {
+   "font": "cour.ttf",
+   "angle": -1.5,
+   "date_text": "10/05/2025",
+   "tax_label": "Sales Tax"
+  }
+ },
+ {
+  "file": "r017.jpg",
+  "vendor": "Old Mill Motel",
+  "date": "2025-07-03",
+  "total": 526.83,
+  "tax": 0.0,
+  "category": "Lodging",
+  "meta": {
+   "font": "arial.ttf",
+   "angle": -0.35,
+   "date_text": "7/3/25",
+   "tax_label": "VAT"
+  }
+ },
+ {
+  "file": "r018.jpg",
+  "vendor": "Quickfill Fuel Stop",
+  "date": "2025-09-13",
+  "total": 89.0,
+  "tax": 4.24,
+  "category": "Fuel",
+  "meta": {
+   "font": "LiberationMono-Regular.ttf",
+   "angle": 0.28,
+   "date_text": "9/13/25",
+   "tax_label": "Tax"
+  }
+ },
+ {
+  "file": "r019.jpg",
+  "vendor": "Lakeside Suites",
+  "date": "2026-04-10",
+  "total": 663.72,
+  "tax": 60.34,
+  "category": "Lodging",
+  "meta": {
+   "font": "times.ttf",
+   "angle": -1.86,
+   "date_text": "10-Apr-2026",
+   "tax_label": "VAT"
+  }
+ },
+ {
+  "file": "r020.jpg",
+  "vendor": "Quickfill Fuel Stop",
+  "date": "2025-12-15",
+  "total": 524.39,
+  "tax": 0.0,
+  "category": "Fuel",
+  "meta": {
+   "font": "consola.ttf",
+   "angle": -0.65,
+   "date_text": "Dec 15, 2025",
+   "tax_label": "Tax 7%"
+  }
+ },
+ {
+  "file": "r021.jpg",
+  "vendor": "Valley Gas Service",
+  "date": "2026-10-27",
+  "total": 509.95,
+  "tax": 46.36,
+  "category": "Utilities",
+  "meta": {
+   "font": "DejaVuSans.ttf",
+   "angle": -1.82,
+   "date_text": "10/27/26",
+   "tax_label": "TAX"
+  }
+ },
+ {
+  "file": "r022.jpg",
+  "vendor": "Skybridge Parking",
+  "date": "2025-06-27",
+  "total": 68.46,
+  "tax": 4.48,
+  "category": "Travel",
+  "meta": {
+   "font": "DejaVuSansMono.ttf",
+   "angle": 1.08,
+   "date_text": "27-Jun-2025",
+   "tax_label": "GST"
+  }
+ },
+ {
+  "file": "r023.jpg",
+  "vendor": "Rapid Pump Station",
+  "date": "2025-09-14",
+  "total": 321.85,
+  "tax": 29.26,
+  "category": "Fuel",
+  "meta": {
+   "font": "DejaVuSans.ttf",
+   "angle": -0.42,
+   "date_text": "Sep 14, 2025",
+   "tax_label": "Tax"
+  }
+ },
+ {
+  "file": "r024.jpg",
+  "vendor": "Harborview Inn",
+  "date": "2025-07-16",
+  "total": 98.93,
+  "tax": 5.6,
+  "category": "Lodging",
+  "meta": {
+   "font": "LiberationMono-Regular.ttf",
+   "angle": -2.43,
+   "date_text": "07/16/2025",
+   "tax_label": "GST"
+  }
+ },
+ {
+  "file": "r025.jpg",
+  "vendor": "Brightwave Internet",
+  "date": "2026-08-30",
+  "total": 138.17,
+  "tax": 0.0,
+  "category": "Utilities",
+  "meta": {
+   "font": "tahoma.ttf",
+   "angle": 0.93,
+   "date_text": "Aug 30, 2026",
+   "tax_label": "TAX"
+  }
+ },
+ {
+  "file": "r026.jpg",
+  "vendor": "Valley Gas Service",
+  "date": "2026-07-01",
+  "total": 128.66,
+  "tax": 0.0,
+  "category": "Utilities",
+  "meta": {
+   "font": "tahoma.ttf",
+   "angle": 1.24,
+   "date_text": "2026-07-01",
+   "tax_label": "Tax 7%"
+  }
+ },
+ {
+  "file": "r027.jpg",
+  "vendor": "Deskworks Outlet",
+  "date": "2025-11-20",
+  "total": 233.66,
+  "tax": 0.0,
+  "category": "Office Supplies",
+  "meta": {
+   "font": "arial.ttf",
+   "angle": -2.26,
+   "date_text": "11/20/2025",
+   "tax_label": "Sales Tax"
+  }
+ },
+ {
+  "file": "r028.jpg",
+  "vendor": "Paperwise Supply Co",
+  "date": "2025-08-31",
+  "total": 121.71,
+  "tax": 7.96,
+  "category": "Office Supplies",
+  "meta": {
+   "font": "lucon.ttf",
+   "angle": -2.01,
+   "date_text": "31-Aug-2025",
+   "tax_label": "GST"
+  }
+ },
+ {
+  "file": "r029.jpg",
+  "vendor": "Bluefin Noodle Bar",
+  "date": "2026-05-09",
+  "total": 51.1,
+  "tax": 2.89,
+  "category": "Meals",
+  "meta": {
+   "font": "DejaVuSansMono.ttf",
+   "angle": 0.19,
+   "date_text": "05/09/2026",
+   "tax_label": "VAT"
+  }
+ },
+ {
+  "file": "r030.jpg",
+  "vendor": "Valley Gas Service",
+  "date": "2026-09-02",
+  "total": 340.4,
+  "tax": 16.21,
+  "category": "Utilities",
+  "meta": {
+   "font": "lucon.ttf",
+   "angle": -0.94,
+   "date_text": "09/02/2026",
+   "tax_label": "VAT"
+  }
+ },
+ {
+  "file": "r031.jpg",
+  "vendor": "Pinecrest Petroleum",
+  "date": "2025-09-16",
+  "total": 381.41,
+  "tax": 0.0,
+  "category": "Fuel",
+  "meta": {
+   "font": "LiberationMono-Regular.ttf",
+   "angle": 1.34,
+   "date_text": "09/16/2025",
+   "tax_label": "Sales Tax"
+  }
+ },
+ {
+  "file": "r032.jpg",
+  "vendor": "Railway Express Tickets",
+  "date": "2026-03-05",
+  "total": 41.52,
+  "tax": 1.98,
+  "category": "Travel",
+  "meta": {
+   "font": "arial.ttf",
+   "angle": 1.54,
+   "date_text": "2026-03-05",
+   "tax_label": "Sales Tax"
+  }
+ },
+ {
+  "file": "r033.jpg",
+  "vendor": "Railway Express Tickets",
+  "date": "2025-04-11",
+  "total": 95.07,
+  "tax": 5.38,
+  "category": "Travel",
+  "meta": {
+   "font": "cour.ttf",
+   "angle": 2.25,
+   "date_text": "4/11/25",
+   "tax_label": "TAX"
+  }
+ },
+ {
+  "file": "r034.jpg",
+  "vendor": "Deskworks Outlet",
+  "date": "2025-06-07",
+  "total": 49.04,
+  "tax": 2.34,
+  "category": "Office Supplies",
+  "meta": {
+   "font": "tahoma.ttf",
+   "angle": 1.82,
+   "date_text": "2025-06-07",
+   "tax_label": "Tax"
+  }
+ },
+ {
+  "file": "r035.jpg",
+  "vendor": "Valley Gas Service",
+  "date": "2025-12-22",
+  "total": 975.19,
+  "tax": 63.8,
+  "category": "Utilities",
+  "meta": {
+   "font": "DejaVuSans.ttf",
+   "angle": -1.26,
+   "date_text": "12/22/25",
+   "tax_label": "TAX"
+  }
+ },
+ {
+  "file": "r036.jpg",
+  "vendor": "Sunny Fork Grill",
+  "date": "2026-07-23",
+  "total": 58.07,
+  "tax": 0.0,
+  "category": "Meals",
+  "meta": {
+   "font": "lucon.ttf",
+   "angle": 1.99,
+   "date_text": "23-Jul-2026",
+   "tax_label": "Sales Tax"
+  }
+ },
+ {
+  "file": "r037.jpg",
+  "vendor": "Cedar Ridge Lodge",
+  "date": "2025-02-23",
+  "total": 346.01,
+  "tax": 0.0,
+  "category": "Lodging",
+  "meta": {
+   "font": "lucon.ttf",
+   "angle": 1.86,
+   "date_text": "Feb 23, 2025",
+   "tax_label": "Tax"
+  }
+ },
+ {
+  "file": "r038.jpg",
+  "vendor": "Valley Gas Service",
+  "date": "2026-04-09",
+  "total": 135.2,
+  "tax": 10.3,
+  "category": "Utilities",
+  "meta": {
+   "font": "cour.ttf",
+   "angle": -0.9,
+   "date_text": "Apr 09, 2026",
+   "tax_label": "Tax"
+  }
+ },
+ {
+  "file": "r039.jpg",
+  "vendor": "Brightwave Internet",
+  "date": "2025-03-06",
+  "total": 506.52,
+  "tax": 46.05,
+  "category": "Utilities",
+  "meta": {
+   "font": "lucon.ttf",
+   "angle": 1.53,
+   "date_text": "06-Mar-2025",
+   "tax_label": "Tax 7%"
+  }
+ },
+ {
+  "file": "r040.jpg",
+  "vendor": "Rapid Pump Station",
+  "date": "2025-02-28",
+  "total": 204.24,
+  "tax": 11.56,
+  "category": "Fuel",
+  "meta": {
+   "font": "cour.ttf",
+   "angle": -2.17,
+   "date_text": "28-Feb-2025",
+   "tax_label": "Sales Tax"
+  }
+ },
+ {
+  "file": "r041.jpg",
+  "vendor": "Quickfill Fuel Stop",
+  "date": "2026-04-28",
+  "total": 9.63,
+  "tax": 0.63,
+  "category": "Fuel",
+  "meta": {
+   "font": "verdana.ttf",
+   "angle": 1.95,
+   "date_text": "4/28/26",
+   "tax_label": "TAX"
+  }
+ },
+ {
+  "file": "r042.jpg",
+  "vendor": "Deskworks Outlet",
+  "date": "2026-11-06",
+  "total": 46.77,
+  "tax": 2.23,
+  "category": "Office Supplies",
+  "meta": {
+   "font": "verdana.ttf",
+   "angle": 0.0,
+   "date_text": "11/6/26",
+   "tax_label": "GST"
+  }
+ },
+ {
+  "file": "r043.jpg",
+  "vendor": "Valley Gas Service",
+  "date": "2026-08-08",
+  "total": 413.04,
+  "tax": 0.0,
+  "category": "Utilities",
+  "meta": {
+   "font": "cour.ttf",
+   "angle": 1.18,
+   "date_text": "2026-08-08",
+   "tax_label": "VAT"
+  }
+ },
+ {
+  "file": "r044.jpg",
+  "vendor": "Ridgeway Gas & Go",
+  "date": "2025-09-27",
+  "total": 323.29,
+  "tax": 18.3,
+  "category": "Fuel",
+  "meta": {
+   "font": "consola.ttf",
+   "angle": -0.8,
+   "date_text": "2025-09-27",
+   "tax_label": "Sales Tax"
+  }
+ },
+ {
+  "file": "r045.jpg",
+  "vendor": "Copper Kettle Cafe",
+  "date": "2026-05-16",
+  "total": 76.88,
+  "tax": 4.35,
+  "category": "Meals",
+  "meta": {
+   "font": "tahoma.ttf",
+   "angle": 0.04,
+   "date_text": "5/16/26",
+   "tax_label": "Sales Tax"
+  }
+ },
+ {
+  "file": "r046.jpg",
+  "vendor": "Clearwater Utility District",
+  "date": "2026-02-24",
+  "total": 548.26,
+  "tax": 26.11,
+  "category": "Utilities",
+  "meta": {
+   "font": "arial.ttf",
+   "angle": -0.62,
+   "date_text": "2/24/26",
+   "tax_label": "Tax 7%"
+  }
+ },
+ {
+  "file": "r047.jpg",
+  "vendor": "Paperwise Supply Co",
+  "date": "2026-05-08",
+  "total": 117.85,
+  "tax": 10.71,
+  "category": "Office Supplies",
+  "meta": {
+   "font": "times.ttf",
+   "angle": 2.22,
+   "date_text": "05/08/2026",
+   "tax_label": "GST"
+  }
+ },
+ {
+  "file": "r048.jpg",
+  "vendor": "Northgrid Power Co",
+  "date": "2025-02-10",
+  "total": 66.63,
+  "tax": 3.17,
+  "category": "Utilities",
+  "meta": {
+   "font": "cour.ttf",
+   "angle": 0.22,
+   "date_text": "10-Feb-2025",
+   "tax_label": "TAX"
+  }
+ },
+ {
+  "file": "r049.jpg",
+  "vendor": "Metro Line Rideshare",
+  "date": "2026-11-29",
+  "total": 98.76,
+  "tax": 8.98,
+  "category": "Travel",
+  "meta": {
+   "font": "LiberationMono-Regular.ttf",
+   "angle": 0.88,
+   "date_text": "2026-11-29",
+   "tax_label": "VAT"
+  }
+ },
+ {
+  "file": "r050.jpg",
+  "vendor": "Clearwater Utility District",
+  "date": "2026-06-03",
+  "total": 391.76,
+  "tax": 18.66,
+  "category": "Utilities",
+  "meta": {
+   "font": "DejaVuSansMono.ttf",
+   "angle": 1.52,
+   "date_text": "Jun 03, 2026",
+   "tax_label": "Tax 7%"
+  }
+ },
+ {
+  "file": "r051.jpg",
+  "vendor": "Clearwater Utility District",
+  "date": "2025-12-30",
+  "total": 214.79,
+  "tax": 16.37,
+  "category": "Utilities",
+  "meta": {
+   "font": "verdana.ttf",
+   "angle": 2.13,
+   "date_text": "12/30/25",
+   "tax_label": "GST"
+  }
+ },
+ {
+  "file": "r052.jpg",
+  "vendor": "Metro Line Rideshare",
+  "date": "2025-02-17",
+  "total": 9.1,
+  "tax": 0.0,
+  "category": "Travel",
+  "meta": {
+   "font": "LiberationMono-Regular.ttf",
+   "angle": -0.59,
+   "date_text": "Feb 17, 2025",
+   "tax_label": "GST"
+  }
+ },
+ {
+  "file": "r053.jpg",
+  "vendor": "Bluepine Airport Shuttle",
+  "date": "2026-04-09",
+  "total": 50.6,
+  "tax": 3.86,
+  "category": "Travel",
+  "meta": {
+   "font": "tahoma.ttf",
+   "angle": -0.23,
+   "date_text": "2026-04-09",
+   "tax_label": "GST"
+  }
+ },
+ {
+  "file": "r054.jpg",
+  "vendor": "Brightwave Internet",
+  "date": "2026-05-15",
+  "total": 46.4,
+  "tax": 0.0,
+  "category": "Utilities",
+  "meta": {
+   "font": "DejaVuSans.ttf",
+   "angle": 0.59,
+   "date_text": "05/15/2026",
+   "tax_label": "Tax"
+  }
+ },
+ {
+  "file": "r055.jpg",
+  "vendor": "Clearwater Utility District",
+  "date": "2025-04-28",
+  "total": 18.32,
+  "tax": 1.4,
+  "category": "Utilities",
+  "meta": {
+   "font": "lucon.ttf",
+   "angle": 0.34,
+   "date_text": "2025-04-28",
+   "tax_label": "GST"
+  }
+ },
+ {
+  "file": "r056.jpg",
+  "vendor": "Quickfill Fuel Stop",
+  "date": "2025-06-28",
+  "total": 122.64,
+  "tax": 0.0,
+  "category": "Fuel",
+  "meta": {
+   "font": "DejaVuSansMono.ttf",
+   "angle": -0.41,
+   "date_text": "06/28/2025",
+   "tax_label": "Sales Tax"
+  }
+ },
+ {
+  "file": "r057.jpg",
+  "vendor": "Railway Express Tickets",
+  "date": "2025-11-28",
+  "total": 240.6,
+  "tax": 11.46,
+  "category": "Travel",
+  "meta": {
+   "font": "LiberationSans-Regular.ttf",
+   "angle": -0.4,
+   "date_text": "28-Nov-2025",
+   "tax_label": "Tax 7%"
+  }
+ },
+ {
+  "file": "r058.jpg",
+  "vendor": "Clearwater Utility District",
+  "date": "2026-11-05",
+  "total": 248.08,
+  "tax": 11.81,
+  "category": "Utilities",
+  "meta": {
+   "font": "tahoma.ttf",
+   "angle": -0.79,
+   "date_text": "05-Nov-2026",
+   "tax_label": "GST"
+  }
+ },
+ {
+  "file": "r059.jpg",
+  "vendor": "Harborview Inn",
+  "date": "2026-11-12",
+  "total": 303.27,
+  "tax": 27.57,
+  "category": "Lodging",
+  "meta": {
+   "font": "calibri.ttf",
+   "angle": 1.78,
+   "date_text": "Nov 12, 2026",
+   "tax_label": "TAX"
+  }
+ },
+ {
+  "file": "r060.jpg",
+  "vendor": "Clearwater Utility District",
+  "date": "2026-10-26",
+  "total": 439.66,
+  "tax": 28.76,
+  "category": "Utilities",
+  "meta": {
+   "font": "verdana.ttf",
+   "angle": -1.63,
+   "date_text": "26-Oct-2026",
+   "tax_label": "GST"
+  }
+ }
+]

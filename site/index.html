@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Receipt Reader AI</title>
+<meta name="description" content="Reads receipt photos in your browser and fills a spreadsheet: vendor, date, total, tax, category. Nothing is uploaded.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+:root {
+  --wall: #cdb9a3; --wall-2: #e9ddcf; --floor: #b89a80; --glow: #fff6e6; --wood: #6b4a33; --wood-2: #8a6447;
+  --ink: #2a2019; --ink-2: rgba(42, 32, 25, .62); --ink-3: rgba(42, 32, 25, .38);
+  --glass: rgba(255, 250, 244, .28); --glass-edge: rgba(255, 255, 255, .55); --card: rgba(255, 252, 248, .6);
+  --shadow: rgba(70, 40, 20, .22); --me: #e2583a; --good: #1f9a72; --bad: #c8452c; --warn: #a8670f;
+  --solid: #2a2019; --solid-fg: #fbf5ee;
+  --f-ui: "Onest", "Segoe UI", system-ui, sans-serif; --f-num: "Geist Mono", ui-monospace, "Cascadia Mono", monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --wall: #2a1f19; --wall-2: #3b2c22; --floor: #241a14; --glow: #ffb867; --wood: #1d140e; --wood-2: #33241a;
+    --ink: #f6ece2; --ink-2: rgba(246, 236, 226, .66); --ink-3: rgba(246, 236, 226, .38);
+    --glass: rgba(34, 24, 18, .4); --glass-edge: rgba(255, 255, 255, .14); --card: rgba(48, 36, 28, .62);
+    --shadow: rgba(0, 0, 0, .45); --me: #ff7a55; --good: #4fd1a1; --bad: #ff8a6a; --warn: #f0b45a;
+    --solid: #f6ece2; --solid-fg: #2a2019; color-scheme: dark;
+  }
+}
+* { box-sizing: border-box }
+body { margin: 0; min-height: 100vh; background: var(--wall); color: var(--ink); font-family: var(--f-ui); font-size: 14px; line-height: 1.5 }
+.room { position: fixed; inset: 0; z-index: -1; overflow: hidden;
+  background: radial-gradient(60% 50% at 78% 18%, var(--glow), transparent 70%), linear-gradient(180deg, var(--wall-2) 0%, var(--wall) 62%, var(--floor) 62.2%, var(--floor) 100%) }
+.room i { position: absolute; display: block }
+.room .panel { left: 0; top: 0; width: 13%; height: 70%; background: repeating-linear-gradient(90deg, var(--wood) 0 18px, var(--wood-2) 18px 22px) }
+.room .shelf { right: 6%; top: 8%; width: 30%; height: 46%; border-radius: 6px; background: linear-gradient(180deg, var(--wood-2), var(--wood)) }
+.room .lamp { left: 26%; top: 18%; width: 180px; height: 180px; border-radius: 50%; background: var(--glow); filter: blur(40px); opacity: .7 }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 20px 16px 48px }
+nav { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 10px 18px; border-radius: 999px;
+  background: var(--glass); border: 1px solid var(--glass-edge); backdrop-filter: blur(18px) saturate(1.3); -webkit-backdrop-filter: blur(18px) saturate(1.3); box-shadow: 0 10px 30px var(--shadow) }
+nav b { font-weight: 700 } nav a { color: var(--ink-2); text-decoration: none; font-weight: 500 } nav a:hover { color: var(--ink) }
+.glass { margin-top: 18px; padding: 22px; border-radius: 28px; background: var(--glass); border: 1px solid var(--glass-edge);
+  backdrop-filter: blur(22px) saturate(1.3); -webkit-backdrop-filter: blur(22px) saturate(1.3); box-shadow: 0 18px 50px var(--shadow) }
+h1 { margin: 0 0 4px; font-size: 28px; letter-spacing: -.02em } .sub { margin: 0; color: var(--ink-2); max-width: 720px }
+.status { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px }
+.pill { padding: 4px 12px; border-radius: 999px; background: var(--card); font-size: 12px; color: var(--ink-2); border: 1px solid var(--glass-edge) }
+.pill.ok { color: var(--good) } .pill.err { color: var(--bad) }
+.drop { display: block; margin-top: 16px; padding: 22px; border: 2px dashed var(--ink-3); border-radius: 20px; text-align: center; color: var(--ink-2); cursor: pointer }
+.drop.over { border-color: var(--me); color: var(--ink) }
+.samples { display: grid; grid-template-columns: repeat(auto-fill, minmax(108px, 1fr)); gap: 10px; margin-top: 14px }
+.samples button { padding: 0; border: 1px solid var(--glass-edge); border-radius: 14px; overflow: hidden; background: var(--card); cursor: pointer; color: var(--ink); font: 500 12px var(--f-ui) }
+.samples img { display: block; width: 100%; height: 110px; object-fit: cover; object-position: top }
+.samples span { display: block; padding: 5px 6px }
+.btn { padding: 9px 16px; border-radius: 999px; border: 0; background: var(--solid); color: var(--solid-fg); font: 600 13px var(--f-ui); cursor: pointer }
+.btn.ghost { background: var(--card); color: var(--ink); border: 1px solid var(--glass-edge) }
+.btn:disabled { opacity: .45; cursor: default }
+.row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center }
+.tablewrap { overflow-x: auto; margin-top: 12px; border-radius: 16px; background: var(--card) }
+table { width: 100%; border-collapse: collapse; font-size: 13px }
+th, td { padding: 8px 10px; text-align: left; border-bottom: 1px solid var(--glass-edge); white-space: nowrap }
+th { font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-2) }
+td.num { font-family: var(--f-num); text-align: right }
+td[contenteditable] { outline: none } td[contenteditable]:focus { background: var(--glass) }
+td img { width: 40px; height: 40px; object-fit: cover; object-position: top; border-radius: 6px; vertical-align: middle }
+.tag { font-size: 10px; padding: 1px 6px; border-radius: 999px; margin-left: 6px; background: var(--glass); color: var(--ink-2) }
+.tag.ai { color: var(--me) }
+.note.ok { color: var(--good) }
+.note { color: var(--warn); font-size: 12px; white-space: normal; min-width: 160px }
+.empty { padding: 18px; color: var(--ink-3); text-align: center }
+details { margin-top: 12px } pre { white-space: pre-wrap; font: 12px var(--f-num); color: var(--ink-2); max-height: 260px; overflow: auto }
+footer { margin-top: 18px; color: var(--ink-2); font-size: 12px; text-align: center } footer a { color: inherit }
+</style>
+</head>
+<body data-state="loading">
+<div class="room"><i class="panel"></i><i class="shelf"></i><i class="lamp"></i></div>
+<div class="wrap">
+  <nav><b>Receipt Reader AI</b><span class="row"><a href="https://github.com/chasebuilds/receipt-reader-ai">Source</a><a href="https://github.com/chasebuilds">Chase Builds</a></span></nav>
+
+  <section class="glass">
+    <h1>Receipt photos in, spreadsheet out</h1>
+    <p class="sub">Reads receipts and invoices with OCR, pulls out vendor, date, total, tax and category, and exports CSV or Excel. Everything runs in this tab. Your files are never uploaded.</p>
+    <div class="status">
+      <span class="pill" id="ocrStatus">OCR: loading</span>
+      <span class="pill" id="modelStatus">Category model: loading</span>
+    </div>
+    <label class="drop" id="drop">Drop receipt images here, or click to pick files (JPG, PNG)
+      <input type="file" id="file" accept="image/*" multiple hidden>
+    </label>
+    <p class="sub" style="margin-top:14px">Or try a sample (fake receipts made for testing):</p>
+    <div class="samples" id="samples"></div>
+  </section>
+
+  <section class="glass">
+    <div class="row" style="justify-content:space-between">
+      <b>Extracted rows <span class="pill" id="count">0</span></b>
+      <span class="row">
+        <button class="btn ghost" id="runAll">Run all samples</button>
+        <button class="btn" id="csv" disabled>Download CSV</button>
+        <button class="btn" id="xlsx" disabled>Download Excel</button>
+      </span>
+    </div>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th></th><th>File</th><th>Vendor</th><th>Date</th><th>Category</th><th>Subtotal</th><th>Tax</th><th>Total</th><th>Check</th></tr></thead>
+        <tbody id="rows"><tr class="empty-row"><td colspan="9" class="empty">Pick a sample or drop a receipt to start.</td></tr></tbody>
+      </table>
+    </div>
+    <p class="sub" style="font-size:12px;margin-top:8px">Cells are editable before export. Category tag shows whether keyword rules or the AI model chose it.</p>
+    <details><summary>OCR text of the last receipt</summary><pre id="ocrText"></pre></details>
+  </section>
+
+  <footer>Built by <a href="https://github.com/chasebuilds">Chase Builds</a>. MIT license. OCR: tesseract.js. Model: transformers.js zero-shot classifier.</footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>

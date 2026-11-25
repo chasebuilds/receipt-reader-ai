@@ -1,0 +1,7 @@
+node_modules/
+test-results/
+playwright-report/
+_site/
+bench/.ocr-cache.json
+__pycache__/
+*.traineddata
